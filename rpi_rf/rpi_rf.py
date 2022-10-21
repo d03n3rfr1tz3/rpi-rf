@@ -19,25 +19,25 @@ Protocol = namedtuple('Protocol',
                        'one_high', 'one_low',
 	               'inverted'])
 PROTOCOLS = (None,
-             Protocol(350, 1, 31, 1, 3, 3, 1, False),			# protocol 1
-             Protocol(650, 1, 10, 1, 2, 2, 1, False),			# protocol 2
-             Protocol(100, 30, 71, 4, 11, 9, 6, False),			# protocol 3
-             Protocol(380, 1, 6, 1, 3, 3, 1, False),			# protocol 4
-             Protocol(500, 6, 14, 1, 2, 2, 1, False),			# protocol 5
-             Protocol(500, 6, 14, 1, 2, 2, 1, False),			# protocol 5
-             Protocol(450, 23, 1 }, 1, 2 }, 2, 1 }, True },		# protocol 6 (HT6P20B)
-             Protocol(150, 2, 62 }, 1, 6 }, 6, 1 }, False },	# protocol 7 (HS2303-PT, i. e. used in AUKEY Remote)
-             Protocol(200, 3, 130 }, 7, 16 }, 3, 16 }, False },	# protocol 8 (Conrad RS-200 RX)
-             Protocol(200, 130, 7 }, 16, 7 }, 16, 3 }, True },	# protocol 9 (Conrad RS-200 TX)
-             Protocol(365, 18, 1 }, 3, 1 }, 1, 3 }, True },		# protocol 10 (1ByOne Doorbell)
-             Protocol(270, 36, 1 }, 1, 2 }, 2, 1 }, True },		# protocol 11 (HT12E)
-             Protocol(320, 36, 1 }, 1, 2 }, 2, 1 }, True },		# protocol 12 (SM5212)
-             Protocol(500, 1, 14 }, 1, 3 }, 3, 1 }, False },	# protocol 13 (Blyss Doorbell Ref. DC6-FR-WH 656185)
-             Protocol(415, 1, 30 }, 1, 3 }, 4, 1 }, False },	# protocol 14 (sc2260R4)
-             Protocol(250, 20, 10 }, 1, 1 }, 3, 1 }, False },	# protocol 15 (Home NetWerks Bathroom Fan Model 6201-500)
-             Protocol(80, 3, 25 }, 3, 13 }, 11, 5 }, False },	# protocol 16 (ORNO OR-GB-417GD)
-             Protocol(82, 2, 65 }, 3, 5 }, 7, 1 }, False },		# protocol 17 (CLARUS BHC993BF-3)
-             Protocol(560, 16, 8 }, 1, 1 }, 1, 3 }, False }		# protocol 18 (NEC)
+             Protocol(350, 1, 31, 1, 3, 3, 1, False),		# protocol 1
+             Protocol(650, 1, 10, 1, 2, 2, 1, False),		# protocol 2
+             Protocol(100, 30, 71, 4, 11, 9, 6, False),		# protocol 3
+             Protocol(380, 1, 6, 1, 3, 3, 1, False),		# protocol 4
+             Protocol(500, 6, 14, 1, 2, 2, 1, False),		# protocol 5
+             Protocol(500, 6, 14, 1, 2, 2, 1, False),		# protocol 5
+             Protocol(450, 23, 1, 1, 2, 2, 1, True),		# protocol 6 (HT6P20B)
+             Protocol(150, 2, 62, 1, 6, 6, 1, False),		# protocol 7 (HS2303-PT, i. e. used in AUKEY Remote)
+             Protocol(200, 3, 130, 7, 16, 3, 16, False),	# protocol 8 (Conrad RS-200 RX)
+             Protocol(200, 130, 7, 16, 7, 16, 3, True),		# protocol 9 (Conrad RS-200 TX)
+             Protocol(365, 18, 1, 3, 1, 1, 3, True),		# protocol 10 (1ByOne Doorbell)
+             Protocol(270, 36, 1, 1, 2, 2, 1, True),		# protocol 11 (HT12E)
+             Protocol(320, 36, 1, 1, 2, 2, 1, True),		# protocol 12 (SM5212)
+             Protocol(500, 1, 14, 1, 3, 3, 1, False),		# protocol 13 (Blyss Doorbell Ref. DC6-FR-WH 656185)
+             Protocol(415, 1, 30, 1, 3, 4, 1, False),		# protocol 14 (sc2260R4)
+             Protocol(250, 20, 10, 1, 1, 3, 1, False),		# protocol 15 (Home NetWerks Bathroom Fan Model 6201-500)
+             Protocol(80, 3, 25, 3, 13, 11, 5, False),		# protocol 16 (ORNO OR-GB-417GD)
+             Protocol(82, 2, 65, 3, 5, 7, 1, False),		# protocol 17 (CLARUS BHC993BF-3)
+             Protocol(560, 16, 8, 1, 1, 1, 3, False)		# protocol 18 (NEC)
             )
 
 
